@@ -48,6 +48,8 @@ function getAllProducts() {
 function searchProducts($search) {
     global $conn;
     
+    $search = mysqli_real_escape_string($conn, $search); // Sanitize input to prevent SQL injection
+    
     $sql = "SELECT * FROM products WHERE name LIKE '%$search%'";
     $result = $conn->query($sql);
     $products = array();
@@ -59,5 +61,20 @@ function searchProducts($search) {
     }
 
     return $products;
+}
+
+
+// Function to retrieve a product by its ID
+function getProductById($product_id) {
+    global $conn;
+    
+    $sql = "SELECT * FROM products WHERE id = '$product_id'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows == 1) {
+        return $result->fetch_assoc();
+    } else {
+        return false;
+    }
 }
 ?>
