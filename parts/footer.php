@@ -1,34 +1,52 @@
-<footer>
-    <div class="footer-cont">
-        <div class="footer-row">
-            <div class="footer-col">
-                <h5>Company</h5>
-                <ul>
-                    <li><a href="#">About Us</a></li>
+<footer class="bg-white text-dark py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>About Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Mission & Vision</a></li>
+                    <li><a href="#">Team</a></li>
                     <li><a href="#">Careers</a></li>
-                    <li><a href="#">Press</a></li>
-                    <!-- Add more links about the company -->
+                    <li><a href="#">Testimonials</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="col-md-3">
+                <h5>Services</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Book Ordering</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
                 <h5>Resources</h5>
-                <ul>
+                <ul class="list-unstyled">
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Support</a></li>
-                    <!-- Add more resource links -->
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="col-md-3">
                 <h5>Connect</h5>
-                <ul>
+                <ul class="list-unstyled">
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Social Media</a></li>
                     <li><a href="#">Newsletter</a></li>
-                    <!-- Add more connection links -->
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Events</a></li>
                 </ul>
             </div>
         </div>
-        <p class="footer-copyright">&copy; <?php echo date("Y"); ?> Shop. All rights reserved.</p>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 Roderick Fields Bookstore. All rights reserved.</p>
+            </div>
+        </div>
     </div>
 </footer>
